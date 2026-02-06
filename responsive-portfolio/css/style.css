@@ -1,0 +1,275 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Inter', sans-serif;
+    overflow-x: hidden;
+}
+
+
+.header-div {
+    background-color: rgba(255, 107, 26, 1);
+    height: 130px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.image-logo {
+    margin-right: 6px;
+}
+
+
+.header-box {
+    h1 {
+        color: white;
+        font-weight: 700;
+        font-size: 24px;
+    }
+}
+
+.paragraph-title {
+    color: white;
+    font-size: 14px;
+    font-weight: 500px;
+}
+
+
+
+.header-list {
+    height: 71px;
+    background-color: rgba(26, 26, 26, 1);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.header-list nav {
+    display: none;
+}
+
+.button-menu {
+    background-color: rgba(255, 107, 26, 1);
+    color: white;
+    width: 103px;
+    height: 37px;
+    border-radius: 8px;
+    border: none;
+    margin-left: 13px;
+}
+
+
+.dropdown {
+    position: relative;
+}
+
+.dropdown a {
+    display: block;
+    color: white;
+    text-decoration: none;
+    background-color: rgba(255, 107, 26, 1);
+    display: flex;
+    justify-content: center;
+    padding: 10px;
+}
+
+.dropdown .content {
+    display: none;
+    position: absolute;
+    top: 37px;
+    left: 13px;
+    width: 103px;
+    background-color: rgba(255, 107, 26, 1);
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+.dropdown:hover .content {
+    display: block;
+}
+
+.menu-title {
+    font-weight: 500;
+    font-size: 19px;
+    cursor: pointer;
+}
+
+.welcome-head {
+    background-color: rgba(42, 42, 42, 0.9);
+    color: white;
+    height: 377px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.welcome-container {
+    width: 326px;
+    height: 204px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    background-image: url(../assets/images/g3173.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 140px;
+    opacity: 0.5;
+
+    h4 {
+        margin-top: 15px;
+        font-size: 16px;
+        font-weight: 400;
+    }
+}
+
+
+
+.main-container {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+
+.container {
+    width: 324px;
+    height: 200px;
+    background-color: white;
+    border-top: 8px solid #ff6b1a;
+    border-radius: 12px;
+    margin-top: 40px;
+    display: flex;
+    flex-direction: column;
+    box-shadow: 0px 2px 8px 0px rgba(0, 0, 0, 0.1);
+    padding-left: 25px;
+    padding-top: 23px;
+
+    P {
+        margin-top: 10px;
+        color: rgba(102, 102, 102, 1);
+    }
+}
+
+.cyclone {
+    margin-right: 8px;
+}
+
+.bottom-side {
+    background-color: rgba(26, 26, 26, 1);
+    height: 90px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 162px;
+}
+
+.footer-title {
+    color: white;
+    font-size: 12px;
+    font-weight: 500;
+    display: block;
+}
+
+.footer-title2 {
+        display: none;
+        color: white;
+        font-size: 12px;
+        font-weight: 500;
+    }
+
+@media (min-width: 768px) {
+    .dropdown {
+        display: none;
+    }
+
+    .content-desktop {
+        display: flex;
+        color: white;
+        list-style: none;
+        gap: 15px;
+    }
+
+    .header-list {
+        display: flex;
+        justify-content: center;
+        color: white;
+        text-decoration: none;
+    }
+
+    .header-list nav {
+        display: block;
+    }
+
+    .link {
+        color: white;
+        text-decoration: none;
+        font-weight: 500;
+        font-size: 17px;
+        font-weight: 400;
+    }
+
+    .link:hover {
+        background-color: #ff6b1a;
+        border: 2px solid white;
+        color: white;
+        border-radius: 8px;
+        border: none;
+        padding: 8px;
+        transition: 0.1s;
+    }
+
+    .image-logo {
+        width: 58px;
+        height: 49px;
+    }
+
+    .title {
+        width: 427px;
+        height: 48px;
+        display: flex;
+    }
+
+    .logo-title {
+        font-size: 40px;
+    }
+
+    .heaader-box {
+        display: flex;
+        gap: 14px;
+    }
+
+
+    .paragraph-title {
+        width: 372px;
+        height: 22px;
+        margin-left: 70px;
+        display: flex;
+        font-weight: 200;
+        font-size: 19px;
+    }
+
+    .main-container {
+        justify-content: center;
+        flex-wrap: wrap;
+        gap: 20px;
+        max-width: 1100px;
+        margin: 0 auto;
+        padding: 20px;
+    }
+
+    .footer-title {
+        display: none;
+    }
+
+    .footer-title2 {
+        color: white;
+        font-size: 12px;
+        font-weight: 500;
+        display: block;
+    }
+}
